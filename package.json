@@ -1,0 +1,19 @@
+{
+  "name": "felixyun_homepage",
+  "version": "1.0.0",
+  "description": "Felix Yun homepage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyun89/felixyun_homepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fyun89/felixyun_homepage/issues"
+  },
+  "homepage": "https://github.com/fyun89/felixyun_homepage#readme"
+}
