@@ -1,19 +1,31 @@
 {
   "name": "felixyun_homepage",
   "version": "1.0.0",
-  "description": "Felix Yun homepage",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fyun89/felixyun_homepage.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/fyun89/felixyun_homepage.git",
+  "author": "fyun89 <fyun89@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fyun89/felixyun_homepage/issues"
   },
-  "homepage": "https://github.com/fyun89/felixyun_homepage#readme"
+  "homepage": "https://github.com/fyun89/felixyun_homepage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
