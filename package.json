@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development --port 3000"
   },
   "repository": "git+https://github.com/fyun89/felixyun_homepage.git",
   "author": "fyun89 <fyun89@gmail.com>",
@@ -19,13 +19,27 @@
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^3.0.1",
+    "g": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "image-webpack-loader": "^4.6.0",
+    "url-loader": "^1.1.2",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }

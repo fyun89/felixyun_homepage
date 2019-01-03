@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import MainPage from "../presentational/MainPage";
+import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
+import MainPage from '../presentational/MainPage';
 
 class MainContainer extends Component {
   constructor() {
     super();
     this.state = {
-      test: "hi"
+      test: 'test',
     };
   }
+
   render() {
     return (
       <div>
