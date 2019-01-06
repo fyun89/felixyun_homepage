@@ -1,0 +1,24 @@
+.navContainer {
+  float: left;
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  background-color: #354458;
+  font-style: #ffffff;
+  box-shadow: 5px 0px 10px;
+  z-index: 100;
+}
+
+.mainPage {
+  float: left;
+  left: 10%;
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  background-color: #3A9AD9;
+  position: relative;
+}
+
+body {
+  background-color: white;
+}

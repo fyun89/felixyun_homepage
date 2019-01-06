@@ -13,7 +13,7 @@ const imageCrop = {
 };
 
 const MainPage = () => (
-  <div>
+  <div className='mainPage'>
     <img
     className='profilePhoto'
     src={profileImage}

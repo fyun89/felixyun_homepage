@@ -24,7 +24,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(gif|svg|jpg|png)$/,
+        test: /\.(gif|svg|jpg)$/, // removed png
         use: [
           {
             loader: 'file-loader',
@@ -32,19 +32,30 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.(gif|png|jpe?g|svg)$/i,
-      //   use: [
-      //     'file-loader',
-      //     {
-      //       loader: 'image-webpack-loader',
-      //       options: {
-      //         bypassOnDebug: true,
-      //         disable: true,
-      //       },
-      //     },
-      //   ],
-      // },
+      {
+        test: /\.png$/,
+        use: 'url-loader?limit=100000',
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader? limit=10000&mimetype=application/font-woff',
+      },
+      {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader?limit=10000&mimetype=application/octet-stream',
+      },
+      {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'file-loader',
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader?limit=10000&mimetype=image/svg+xml',
+      },
     ],
   },
   plugins: [

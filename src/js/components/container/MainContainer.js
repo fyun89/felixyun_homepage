@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
+import NavContainer from './NavContainer';
 import MainPage from '../presentational/MainPage';
 
 class MainContainer extends Component {
@@ -13,6 +13,7 @@ class MainContainer extends Component {
   render() {
     return (
       <div>
+        <NavContainer />
         <MainPage test={this.state.test} />
       </div>
     );
