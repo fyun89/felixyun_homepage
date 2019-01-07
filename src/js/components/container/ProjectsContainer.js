@@ -1,7 +1,7 @@
 import React from 'react';
 
-function ProjectContainer() {
-  return <div>Coming Soon</div>;
-}
+const ProjectContainer = () => (
+  <div>Coming Soon</div>
+);
 
 export default ProjectContainer;

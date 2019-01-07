@@ -5,7 +5,7 @@
   width: 10%;
   background-color: #354458;
   font-style: #ffffff;
-  box-shadow: 5px 0px 10px;
+  box-shadow: 5px -1px 10px;
   z-index: 100;
 }
 
@@ -17,6 +17,17 @@
   width: 100%;
   background-color: #3A9AD9;
   position: relative;
+  text-align: center;
+}
+
+.profilePhoto {
+  display: inline;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 body {
