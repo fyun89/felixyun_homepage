@@ -23,8 +23,8 @@
 .profilePhoto {
   display: inline;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   align-content: center;
   overflow: hidden;
   border-radius: 50%;
